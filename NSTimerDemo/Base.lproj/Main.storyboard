@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NSTimerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Fx-VL-cqT">
+                                <rect key="frame" x="284" y="285" width="32" height="30"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Vf-ml-KWA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyO-2F-1DS">
+                                <rect key="frame" x="20" y="28" width="560" height="153"/>
+                                <color key="backgroundColor" red="1" green="0.77871348640000004" blue="0.1372999647" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2Fx-VL-cqT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9A2-TI-m0y"/>
+                            <constraint firstItem="xyO-2F-1DS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DvA-vO-ug5"/>
+                            <constraint firstItem="xyO-2F-1DS" firstAttribute="leading" secondItem="2Fx-VL-cqT" secondAttribute="trailing" constant="-296" id="E9c-fQ-ziM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xyO-2F-1DS" secondAttribute="trailing" id="ICd-Uh-JIj"/>
+                            <constraint firstItem="2Fx-VL-cqT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jcX-Rv-PCA"/>
+                            <constraint firstItem="xyO-2F-1DS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="mbL-2u-wS7"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="xyO-2F-1DS" secondAttribute="leading" id="mla-iz-dUt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelText" destination="xyO-2F-1DS" id="hHm-Te-MBm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="429"/>
+        </scene>
+    </scenes>
+</document>
